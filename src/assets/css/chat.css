@@ -1,0 +1,95 @@
+/* Chat message styles */
+.message {
+    @apply p-4 rounded-lg mb-4 animate-fade-in;
+}
+
+.message-user {
+    @apply bg-primary bg-opacity-20 ml-12 mr-4;
+}
+
+.message-ai {
+    @apply bg-light-card dark:bg-dark-card mr-12 ml-4;
+}
+
+.message-content {
+    @apply prose prose-invert max-w-none;
+}
+
+/* Code block styles */
+.message pre {
+    @apply bg-light-bg dark:bg-dark-bg rounded-lg p-4 my-2 overflow-x-auto;
+}
+
+.message code {
+    @apply font-mono text-sm;
+}
+
+/* Sidebar states */
+.sidebar-open-left main {
+    @apply ml-64;
+}
+
+.sidebar-open-right main {
+    @apply mr-64;
+}
+
+.sidebar-open-left #leftSidebar {
+    @apply translate-x-0;
+}
+
+.sidebar-open-right #rightSidebar {
+    @apply -translate-x-0;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.3s ease-out;
+}
+
+/* Textarea auto-resize */
+#messageInput {
+    min-height: 44px;
+    max-height: 200px;
+}
+
+/* Loading indicator */
+.loading-dots::after {
+    content: '';
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    0% { content: ''; }
+    25% { content: '.'; }
+    50% { content: '..'; }
+    75% { content: '...'; }
+    100% { content: ''; }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-light-bg dark:bg-dark-bg;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-light-muted dark:bg-dark-muted rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-light-text dark:bg-dark-text;
+} 

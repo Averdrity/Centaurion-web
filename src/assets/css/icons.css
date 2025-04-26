@@ -1,0 +1,43 @@
+/* Icon utilities */
+.icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Icon sizes */
+.icon-sm {
+    width: 16px;
+    height: 16px;
+}
+
+.icon-lg {
+    width: 32px;
+    height: 32px;
+}
+
+/* Icon colors - works with SVG icons */
+.icon-primary {
+    filter: invert(45%) sepia(96%) saturate(1720%) hue-rotate(200deg) brightness(97%) contrast(95%);
+}
+
+.icon-secondary {
+    filter: invert(18%) sepia(81%) saturate(2383%) hue-rotate(216deg) brightness(93%) contrast(91%);
+}
+
+.icon-gray {
+    filter: invert(47%) sepia(5%) saturate(343%) hue-rotate(167deg) brightness(94%) contrast(87%);
+}
+
+/* Common icon placements */
+.icon-left {
+    margin-right: 0.5rem;
+}
+
+.icon-right {
+    margin-left: 0.5rem;
+} 

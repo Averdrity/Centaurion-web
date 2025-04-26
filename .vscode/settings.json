@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "host.docker.internal",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "ProjectAver",
+            "username": "aver",
+            "database": "centaurion_db"
+        }
+    ]
+}
